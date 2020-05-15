@@ -20,12 +20,17 @@ public class Main {
 
     static void task3_zagadat_chislo()
     {
-        int tryCount=0;
-        int chislo = (int)(Math.random()*10);
-        boolean win=false;
-        boolean exit=false;
+
+
         int tryChislo;
         Scanner in = new Scanner(System.in);
+        int exitPr=3;
+        do {
+
+            int tryCount=0;
+            int chislo = (int)(Math.random()*10);
+            boolean win=false;
+            boolean exit=false;
         while (!exit)
         {
 
@@ -48,7 +53,12 @@ public class Main {
         if (win)
             System.out.println("Вы выйграли");
         else
-            System.out.format("Вы проиграли, загаданное число - %s", chislo);
+            System.out.format("Вы проиграли, загаданное число - %s \n", chislo);
+            System.out.println("Повторить игру еще раз? 1 – да , 0 – нет»(1 – повторить, 0 – нет)");
+            exitPr=in.nextInt();
+
      }
+        while (exitPr==1);
+    }
     }
 
