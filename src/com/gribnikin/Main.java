@@ -24,7 +24,7 @@ public class Main {
 
         int tryChislo;
         Scanner in = new Scanner(System.in);
-        int exitPr=3;
+        int exitPr=4;
         do {
 
             int tryCount=0;
