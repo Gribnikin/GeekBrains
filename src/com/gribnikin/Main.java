@@ -14,7 +14,22 @@ public class Main {
     */
 
     public static void main(String[] args) {
-       task3_zagadat_chislo();
+
+        Cat cat = new Cat(30,2,"Кот");
+        cat.run(50);
+        cat.jump(4);
+        cat.run(15);
+        cat.jump(1);
+        cat.swim(40);
+        Dog dog = new Dog(20,3,"Собака");
+        dog.run(30);
+        dog.jump(4);
+        dog.jump(1);
+        dog.run(10);
+        dog.swim(30);
+        dog.swim(5);
+
+        // task3_zagadat_chislo();
 
     }
 
@@ -24,7 +39,7 @@ public class Main {
 
         int tryChislo;
         Scanner in = new Scanner(System.in);
-        int exitPr=4;
+        int exitPr=3;
         do {
 
             int tryCount=0;
